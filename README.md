@@ -7,6 +7,7 @@
 * Fast and reliable - it uses the same servers that translate.google.com uses
 * Support for httpx and aiohttp
 * Fully asyncio support
+* Simple result caching
 
 #### Example
 ```python

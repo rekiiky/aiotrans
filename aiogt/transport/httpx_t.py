@@ -24,6 +24,5 @@ class HttpxTransport(Transport):
 
         return html.unescape(response.text)
 
-
     async def close(self):
         await self.conn.aclose()
