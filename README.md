@@ -1,7 +1,7 @@
 # Simple async Google Translate library
 
 #### Instalation:
-```pip install aiogt```
+```pip install aiogt[aiohttp]``` or ```pip install aiogt[httpx]```
 
 #### Featrures
 * Fast and reliable - it uses the same servers that translate.google.com uses
