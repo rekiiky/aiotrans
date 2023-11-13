@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "aiogt"
+version = "1.0.0rc1"
+description = ""
+authors = ["Robert Stoul <rekiiky@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = {version = "^3.8.6", optional = true}
+httpx = {version = "^0.25.1", optional = true}
+redis = {version = "^5.0.1", optional = true}
+urlcon = "^0.1.0rc1"
+
+[tool.poetry.extras]
+aiohttp = ["aiohttp"]
+httpx = ["httpx"]
+cache = ["redis"]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
